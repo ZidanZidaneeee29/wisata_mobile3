@@ -27,7 +27,7 @@ List<TravelDestination> listDestination = [
   // Popular destinations
   TravelDestination(
       id: 1,
-      name: "Gunung Bromo",
+      name: "Rainbow Slide",
       category: 'popular',
       image: [
         "https://images.unsplash.com/photo-1683772965002-67c1f0a6d5fd?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -35,7 +35,7 @@ List<TravelDestination> listDestination = [
         "https://images.unsplash.com/photo-1650198147183-4a802821f1ed?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1603347194698-9a1e21af75c8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       ],
-      location: 'Jawa Timur, Indonesia',
+      location: 'Cianjur',
       review: random.nextInt(250) + 20,
       price: 150,
       description: description,

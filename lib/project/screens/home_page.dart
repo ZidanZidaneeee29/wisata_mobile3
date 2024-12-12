@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBackgroundColor,
+      backgroundColor: const Color.fromARGB(255, 240, 255, 240),
       body: Column(
         children: [
           buildAppBar(),
@@ -93,59 +93,59 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 20,
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Rekomendasi Untuk Kamu',
-                  style: TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.black,
-                  ),
-                ),
-                Text(
-                  'Lihat Semua',
-                  style: TextStyle(
-                    fontSize: 13,
-                    color: blueTextColor,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Expanded(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.vertical,
-              padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Column(
-                children: List.generate(
-                  rekomendasi.length,
-                  (index) => Padding(
-                    padding: EdgeInsets.only(bottom: 10),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => DetailDestinasi(
-                                destination: rekomendasi[index]),
-                          ),
-                        );
-                      },
-                      child: RekomendasiDestination(
-                          destination: rekomendasi[index]),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: EdgeInsets.symmetric(horizontal: 15),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //     children: [
+          //       Text(
+          //         'Rekomendasi Untuk Kamu',
+          //         style: TextStyle(
+          //           fontSize: 17,
+          //           fontWeight: FontWeight.w600,
+          //           color: Colors.black,
+          //         ),
+          //       ),
+          //       Text(
+          //         'Lihat Semua',
+          //         style: TextStyle(
+          //           fontSize: 13,
+          //           color: blueTextColor,
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          // SizedBox(
+          //   height: 20,
+          // ),
+          // Expanded(
+          //   child: SingleChildScrollView(
+          //     scrollDirection: Axis.vertical,
+          //     padding: EdgeInsets.symmetric(horizontal: 15),
+          //     child: Column(
+          //       children: List.generate(
+          //         rekomendasi.length,
+          //         (index) => Padding(
+          //           padding: EdgeInsets.only(bottom: 10),
+          //           child: GestureDetector(
+          //             onTap: () {
+          //               Navigator.push(
+          //                 context,
+          //                 MaterialPageRoute(
+          //                   builder: (_) => DetailDestinasi(
+          //                       destination: rekomendasi[index]),
+          //                 ),
+          //               );
+          //             },
+          //             child: RekomendasiDestination(
+          //                 destination: rekomendasi[index]),
+          //           ),
+          //         ),
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Column(
@@ -202,14 +202,14 @@ Widget buildAppBar() {
   return Container(
     height: 120,
     decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.white.withOpacity(0.0),
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(25),
           bottomRight: Radius.circular(25),
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.7),
+            color: Colors.  grey.withOpacity(0.0),
             spreadRadius: 5,
             blurRadius: 10,
             offset: Offset(0, 5),
@@ -229,11 +229,11 @@ Widget buildSearchButton() {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
     decoration: BoxDecoration(
-      color: kButtonColor,
+      color: const Color.fromARGB(100, 84, 151, 60),
       borderRadius: BorderRadius.circular(20),
       boxShadow: [
         BoxShadow(
-          color: Colors.grey.withOpacity(0.8),
+          color: Colors.grey.withOpacity(0.1),
           spreadRadius: 2,
           blurRadius: 10,
           offset: const Offset(0, 5),

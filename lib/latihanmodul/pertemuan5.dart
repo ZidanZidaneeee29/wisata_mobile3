@@ -19,28 +19,28 @@ class _Pertemuan5State extends State<Pertemuan5> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Pertemuan 5 Widget Lanjutan'),
+        title: const Text('Pertemuan 5 Widget Lanjutan'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
               controller: textEditingController,
-              decoration: InputDecoration(labelText: 'Masukan Nama'),
+              decoration: const InputDecoration(labelText: 'Masukan Nama'),
               onChanged: (String value) {
                 setState(() {
                   nama = value;
                 });
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                Text('Jenis Kelamin'),
+                const Text('Jenis Kelamin'),
                 Radio(
                     value: 'Laki Laki',
                     groupValue: selectedRadio,
@@ -49,7 +49,7 @@ class _Pertemuan5State extends State<Pertemuan5> {
                         selectedRadio = value.toString();
                       });
                     }),
-                Text('Laki-Laki'),
+                const Text('Laki-Laki'),
                 Radio(
                     value: 'Perempuan',
                     groupValue: selectedRadio,
@@ -58,15 +58,15 @@ class _Pertemuan5State extends State<Pertemuan5> {
                         selectedRadio = value.toString();
                       });
                     }),
-                Text('Perempuan'),
+                const Text('Perempuan'),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text('Hobi:'),
+            const Text('Hobi:'),
             CheckboxListTile(
-                title: Text('Olahraga'),
+                title: const Text('Olahraga'),
                 value: olahraga,
                 onChanged: (value) {
                   setState(() {
@@ -74,18 +74,18 @@ class _Pertemuan5State extends State<Pertemuan5> {
                   });
                 }),
             CheckboxListTile(
-                title: Text('Seni'),
+                title: const Text('Seni'),
                 value: seni,
                 onChanged: (value) {
                   setState(() {
                     seni = value!;
                   });
                 }),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             SwitchListTile(
-                title: Text('Lulus'),
+                title: const Text('Lulus'),
                 value: switchValue,
                 onChanged: (value) {
                   setState(() {

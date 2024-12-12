@@ -31,9 +31,9 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                     color: Colors.white,
                     boxShadow: const [
                       BoxShadow(
-                        color: Colors.black38,
+                        color: Color.fromARGB(100, 84, 151, 60),
                         offset: Offset(0, 5),
-                        blurRadius: 7,
+                        blurRadius: 8,
                         spreadRadius: 1,
                       ),
                     ],
@@ -89,7 +89,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
                               ),
                             ),
                             Container(
-                              color: Colors.black.withOpacity(0.7),
+                              color: const Color.fromARGB(100, 84, 151, 60).withOpacity(0.7),
                               child: Padding(
                                 padding: const EdgeInsets.all(10),
                                 child: Column(
@@ -408,7 +408,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
             padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.black12),
+              border: Border.all(color: const Color.fromARGB(100, 84, 151, 60)),
             ),
             child: const Icon(
               Icons.arrow_back_ios_new_rounded,
@@ -426,7 +426,7 @@ class _DetailDestinasiState extends State<DetailDestinasi> {
           padding: const EdgeInsets.all(5),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: Colors.black12),
+            border: Border.all(color: const Color.fromARGB(100, 84, 151, 60)),
           ),
           child: const Icon(
             Icons.bookmark_border_rounded,

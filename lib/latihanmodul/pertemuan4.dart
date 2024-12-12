@@ -5,7 +5,7 @@ class LatihanModul4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Pertemuan Empat',
       home: Scaffold(
         body: Center(
@@ -24,7 +24,7 @@ class Heading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 24.0,
         fontWeight: FontWeight.bold,
       ),
@@ -57,7 +57,7 @@ class _BiggerTextState extends State<BiggerText> {
                 _textSize++;
               });
             },
-            child: Text('Perbesar'))
+            child: const Text('Perbesar'))
       ],
     );
   }

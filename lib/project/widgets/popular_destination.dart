@@ -1,3 +1,4 @@
+
 import 'package:aslab_travel/model/destination_model.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +10,7 @@ class PopularDestination extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned(
-          bottom: 0,
+        Positioned(          bottom: 0,
           right: 20,
           left: 20,
           child: Container(
@@ -18,7 +18,7 @@ class PopularDestination extends StatelessWidget {
               color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black12.withOpacity(0.3),
+                  color: const Color.fromARGB(100, 84, 151, 60),
                   spreadRadius: 7,
                   blurRadius: 8,
                 ),
@@ -44,7 +44,7 @@ class PopularDestination extends StatelessWidget {
               children: [
                 const Spacer(),
                 Container(
-                  color: Colors.black.withOpacity(0.8),
+                  color: const Color.fromARGB(100, 84, 151, 60),
                   child: Padding(
                     padding: const EdgeInsets.all(12),
                     child: Row(
